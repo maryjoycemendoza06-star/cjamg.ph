@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CJAMG creates customized team-building, leadership, communication, and development experiences for teams and organizations.">
+<title>CJAMG | About Us</title>
+<style>
+:root{--orange:#f47721;--yellow:#ffc928;--black:#171717;--ink:#242424;--white:#fff;--gray:#777;--light:#f5f5f4;--line:#e4e4e4;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit}
+button,a{ -webkit-tap-highlight-color:transparent}
+.container{width:min(92%,var(--max));margin-inline:auto}
+.section{padding:88px 0}
+.section-dark{background:var(--black);color:#fff}
+.section-light{background:var(--light)}
+.kicker{color:var(--orange);font-size:.76rem;letter-spacing:.17em;text-transform:uppercase;font-weight:800}
+h1,h2,h3{line-height:1.13;letter-spacing:-.025em}
+h1{font-size:clamp(2.8rem,6vw,5.6rem)}
+h2{font-size:clamp(2rem,4vw,3.5rem);margin:.55rem 0 1rem}
+h3{font-size:1.22rem}
+p{margin:.65rem 0}
+.lead{font-size:1.08rem;color:#606060;max-width:760px}
+.section-dark .lead{color:#ccc}
+.section-head{max-width:780px;margin-bottom:36px}
+.accent{color:var(--orange)}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:var(--orange);color:#171717;border:2px solid var(--orange);padding:13px 20px;border-radius:3px;font-weight:800;transition:transform .2s,background .2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);background:var(--yellow);border-color:var(--yellow)}
+.btn-ghost{background:transparent;color:#fff;border-color:#777}
+.btn-ghost:hover{color:#171717}
+.small-note{font-size:.82rem;color:#777}
+header{position:sticky;top:0;z-index:50;background:rgba(20,20,20,.97);color:#fff;border-bottom:1px solid #383838}
+.navbar{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.07em;font-size:1.55rem}
+.brand-mark{height:43px;width:43px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#171717;font-size:.9rem;overflow:hidden}
+.brand-mark img{width:100%;height:100%;object-fit:cover}
+.brand span{color:var(--orange)}
+.navlinks{display:flex;gap:clamp(10px,2vw,25px);align-items:center;list-style:none}
+.navlinks a{font-size:.86rem;color:#eee}
+.navlinks a:hover{color:var(--yellow)}
+.nav-cta{padding:9px 13px;border:1px solid var(--orange);border-radius:3px}
+.menu-btn{display:none;background:transparent;color:#fff;border:1px solid #555;padding:8px 11px}
+.hero{background:var(--black);color:#fff;padding:65px 0 34px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}
+.hero-copy .kicker{color:var(--yellow)}
+.hero h1{margin:19px 0 22px}
+.hero-copy>p{color:#d0d0d0;font-size:1.1rem;max-width:590px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.hero-photo{position:relative;min-height:440px;background:#292929;border-radius:5px;overflow:hidden}
+.hero-photo img{width:100%;height:490px;object-fit:cover;object-position:center 30%}
+.photo-caption{position:absolute;bottom:18px;left:18px;background:var(--yellow);color:#171717;padding:12px 15px;font-weight:800;max-width:240px}
+.hero-strip{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid #444;margin-top:52px;padding-top:19px;color:#bcbcbc;font-size:.75rem;letter-spacing:.1em}
+.proof{background:var(--orange);padding:27px 0}
+.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.proof-item{border-right:1px solid #d35e10;padding-right:14px}
+.proof-item:last-child{border:0}
+.proof strong{display:block;font-size:clamp(1.65rem,3vw,2.5rem);line-height:1.15}
+.proof span{font-size:.85rem;font-weight:700}
+.people-grid,.two-col{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.editorial-photo{border-radius:5px;overflow:hidden;background:#e3e3e3;min-height:320px}
+.editorial-photo img{width:100%;height:100%;min-height:320px;object-fit:cover}
+.point-list{list-style:none;margin:22px 0}
+.point-list li{padding:10px 0 10px 27px;position:relative;border-bottom:1px solid var(--line)}
+.point-list li:before{content:"✓";position:absolute;left:0;color:var(--orange);font-weight:900}
+.logo-wall{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:28px}
+.logo-slot{min-height:90px;border:1px dashed #777;border-radius:4px;display:grid;place-items:center;text-align:center;padding:12px;color:#888;font-weight:800;font-size:.82rem;background:rgba(255,255,255,.035)}
+.logo-slot small{display:block;font-weight:400;font-size:.68rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e7e7e7;border-radius:5px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 35px #00000012}
+.card-body{padding:24px}
+.card-body p{color:#666;font-size:.94rem}
+.card-tag{display:inline-block;background:#fff0e4;color:#a64708;padding:5px 9px;font-size:.72rem;font-weight:800;margin-bottom:12px}
+.card-image{height:190px;background:#ddd;overflow:hidden}
+.card-image img{width:100%;height:100%;object-fit:cover}
+.card-num{font-size:2.6rem;color:var(--orange);font-weight:900}
+.pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}
+.pill{border:1px solid #ddd;border-radius:30px;padding:7px 12px;font-size:.82rem;background:#fff}
+.investment{background:#191919;color:#fff;border-top:4px solid var(--orange);padding:30px;border-radius:5px}
+.price{font-size:clamp(2rem,4vw,3.1rem);font-weight:900;color:var(--yellow);line-height:1.2;margin:12px 0}
+.investment ul{padding-left:20px;color:#ddd;margin:15px 0}
+.sample-scopes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.scope{padding:18px;border:1px solid #555;border-radius:4px}
+.scope strong{color:var(--yellow);display:block;font-size:1.3rem}
+.dark-panel{background:#1d1d1d;color:#fff;padding:28px;border-radius:5px}
+.debrief-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.step{padding:25px;background:#fff;color:#222;border-top:4px solid var(--orange);border-radius:4px}
+.step-time{font-weight:800;color:#a84a0b;font-size:.8rem;letter-spacing:.08em}
+.step h3{margin:10px 0}
+.total-time{display:inline-block;background:var(--yellow);color:#171717;font-weight:900;padding:8px 14px;border-radius:3px;margin-top:20px}
+.toolkit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.toolkit{background:#fff;padding:22px;border:1px solid #e5e5e5;border-radius:4px}
+.toolkit-icon{font-size:1.6rem;color:var(--orange)}
+.toolkit h3{margin:9px 0}
+.toolkit p{font-size:.88rem;color:#666}
+.placeholder-link{display:inline-block;margin-top:12px;font-size:.8rem;color:#9b4c15;font-weight:800}
+.destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.destination{min-height:190px;border-radius:4px;overflow:hidden;background:#242424;color:#fff;position:relative;display:flex;align-items:end;padding:20px}
+.destination:before{content:"";position:absolute;inset:0;background:linear-gradient(transparent,#000c)}
+.destination-content{position:relative}
+.destination h3{font-size:1.25rem}
+.destination p{font-size:.8rem;color:#ddd;margin-bottom:0}
+.map-note{background:#fff3e8;border-left:4px solid var(--orange);padding:16px;margin-top:20px;color:#60320f}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.video-thumb{min-height:190px;background:linear-gradient(135deg,#303030,#555);display:grid;place-items:center;position:relative;color:#fff}
+.play{width:58px;height:58px;border-radius:50%;background:var(--orange);display:grid;place-items:center;color:#171717;font-size:1.3rem}
+.video-thumb span{position:absolute;left:14px;bottom:12px;font-size:.72rem;color:#eee}
+.testimonial-placeholder{border:1px dashed #888;padding:20px;border-radius:4px;color:#aaa}
+.about-values{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px}
+.value{padding:18px;border:1px solid #484848;border-radius:4px}
+.value strong{color:var(--yellow);font-size:1.1rem}
+details.faq{background:#fff;border:1px solid #e4e4e4;border-radius:4px;margin-bottom:10px}
+details.faq summary{cursor:pointer;list-style:none;padding:19px 22px;font-weight:800;display:flex;justify-content:space-between;gap:16px}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary:after{content:"+";color:var(--orange);font-size:1.3rem}
+details.faq[open] summary:after{content:"−"}
+.faq-answer{padding:0 22px 20px;color:#626262}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px}
+.contact-panel{background:#191919;color:#fff;padding:30px;border-radius:5px}
+.contact-line{padding:15px 0;border-bottom:1px solid #444}
+.contact-line strong{display:block;color:var(--yellow);font-size:.8rem}
+.contact-line a:hover{color:var(--yellow)}
+.contact-form{display:grid;gap:15px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact-form label{display:block;font-size:.83rem;font-weight:800;margin-bottom:6px}
+.contact-form input,.contact-form textarea,.contact-form select{width:100%;padding:13px;border:1px solid #ddd;border-radius:3px;background:#fff}
+.contact-form textarea{min-height:130px;resize:vertical}
+.form-help{font-size:.82rem;color:#666}
+footer{background:#101010;color:#fff;padding:48px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;padding-bottom:32px}
+.footer-grid h3{font-size:.9rem;color:var(--yellow);margin-bottom:12px}
+.footer-grid p,.footer-grid a{font-size:.85rem;color:#bcbcbc}
+.footer-grid a{display:block;margin:7px 0}
+.footer-grid a:hover{color:var(--orange)}
+.footer-bottom{border-top:1px solid #383838;padding-top:18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#888;font-size:.78rem}
+@media(max-width:900px){.hero-grid,.people-grid,.two-col,.contact-grid{grid-template-columns:1fr 1fr;gap:28px}.cards{grid-template-columns:repeat(2,1fr)}.toolkit-grid{grid-template-columns:repeat(2,1fr)}.logo-wall{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.section{padding:65px 0}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:75px;left:0;right:0;background:#171717;padding:12px 5% 20px;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid #333}.navlinks.open{display:flex}.navlinks a{display:block;padding:11px 0}.nav-cta{border:0}.hero-grid,.people-grid,.two-col,.contact-grid{grid-template-columns:1fr}.hero{padding-top:45px}.hero-photo{min-height:330px}.hero-photo img{height:390px}.proof-grid{grid-template-columns:1fr 1fr}.proof-item:nth-child(2){border:0}.cards,.destination-grid,.video-grid,.debrief-steps{grid-template-columns:1fr}.logo-wall{grid-template-columns:repeat(2,1fr)}.sample-scopes{grid-template-columns:1fr}.about-values{grid-template-columns:1fr}.toolkit-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.hero-strip{margin-top:35px}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+/* Interactive activity finder */
+.finder-section{background:linear-gradient(130deg,#fff0f5 0%,#f1edff 48%,#e9f5ff 100%);color:#17172b}
+.finder-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:42px;align-items:start}
+.finder-copy h2{font-size:clamp(2.4rem,4.5vw,4.2rem);max-width:650px}
+.finder-copy .lead{color:#56566d}
+.activity-tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+.activity-tile{min-height:112px;border-radius:18px;padding:17px;display:flex;flex-direction:column;justify-content:space-between;font-weight:800;box-shadow:0 10px 28px #28205b10}
+.activity-tile span{font-size:1.8rem}
+.activity-tile small{font-size:.78rem;font-weight:700;opacity:.8}
+.tile-yellow{background:#fff0a8}.tile-orange{background:#ffd4b5}.tile-blue{background:#cce9ff}.tile-purple{background:#e3d5ff}.tile-pink{background:#ffd7e7}.tile-green{background:#d9f4dc}
+.finder-card{background:#fff;border:1px solid #ffffffc9;border-radius:24px;padding:clamp(20px,3vw,32px);box-shadow:0 20px 55px #29234d1c}
+.finder-card h3{font-size:1.45rem;margin-bottom:6px;color:#19192b}
+.finder-intro{font-size:.9rem;color:#68687a;margin-bottom:23px}
+.finder-field{border:0;padding:0;margin:0 0 21px;min-width:0}
+.finder-field legend,.finder-label{display:block;font-weight:800;font-size:.9rem;margin-bottom:10px;color:#25253b}
+.choice-list{display:flex;flex-wrap:wrap;gap:8px}
+.choice-btn{border:1px solid #dedee8;background:#fff;border-radius:999px;padding:9px 13px;font-size:.84rem;color:#44445a;cursor:pointer;transition:background .18s,border-color .18s,color .18s}
+.choice-btn:hover{border-color:#df5c94}
+.choice-btn[aria-pressed="true"]{background:#ffe0ed;border-color:#df5c94;color:#a52862;font-weight:800}
+.finder-select,.finder-extra input,.finder-extra select,.finder-extra textarea{width:100%;padding:12px;border:1px solid #dedee8;border-radius:11px;background:#fff;color:#24243b}
+.finder-two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.finder-extra{background:#faf9ff;border:1px solid #ece9f6;border-radius:14px;padding:16px;margin:3px 0 20px}
+.finder-extra summary{font-weight:800;cursor:pointer;color:#41405c}
+.finder-extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.finder-extra label{display:block;font-size:.82rem;font-weight:700;margin-bottom:6px}
+.finder-submit{width:100%;border:0;background:#cf397d;color:#fff;padding:15px 18px;border-radius:999px;font-weight:800;cursor:pointer;box-shadow:0 8px 18px #cf397d30}
+.finder-submit:hover{background:#ae2865}
+.finder-note{font-size:.77rem;color:#77778b;margin-top:12px}
+.finder-results{display:none;margin-top:22px;border-top:1px solid #eeeaf5;padding-top:20px}
+.finder-results.visible{display:block}
+.finder-results h4{font-size:1.12rem;margin-bottom:10px}
+.recommendation-list{display:grid;gap:10px}
+.recommendation{border:1px solid #eee8f4;background:#fcfbff;border-radius:13px;padding:14px}
+.recommendation strong{display:block;color:#24243b}
+.recommendation p{font-size:.86rem;color:#626278;margin:.35rem 0}
+.finder-result-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.finder-reset{border:1px solid #d9d6e4;background:#fff;color:#44445a;border-radius:999px;padding:10px 15px;font-weight:700;cursor:pointer}
+@media(max-width:900px){.finder-grid{grid-template-columns:1fr}.finder-copy{max-width:750px}}
+@media(max-width:560px){.activity-tiles{grid-template-columns:1fr 1fr}.finder-two,.finder-extra-grid{grid-template-columns:1fr}.choice-btn{font-size:.8rem;padding:8px 11px}}
+
+
+
+.home-shortcut{white-space:nowrap;padding:9px 13px;font-size:.82rem;flex-shrink:0}
+.navlinks a[aria-current="page"]{color:var(--yellow);font-weight:800}
+.footer-home{margin-top:14px;font-size:.82rem;padding:9px 12px}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+@media(max-width:700px){.navbar{flex-wrap:wrap}.home-shortcut{margin-left:auto}.navlinks{top:75px}}
+</style>
+</head>
+<body>
+<header>
+ <nav class="navbar container" aria-label="Main navigation">
+  <a class="brand" href="index.html" aria-label="CJAMG Home">
+  <img src="images/branding/cjamg-logo.png"
+       alt="CJAMG Logo"
+       width="55">
+  <span style="color:#fff">CJAMG</span>
+</a>  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">☰ Menu</button>
+  <ul class="navlinks" id="navLinks"><li><a href="index.html">Home</a></li><li><a href="activity-finder.html">Activity Finder</a></li><li><a href="programs.html">Programs</a></li><li><a href="experience.html">Experience</a></li><li><a href="about.html" aria-current="page">About Us</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="contact.html">Contact</a></li></ul>
+  <a class="btn home-shortcut" href="index.html#home" aria-label="Return to CJAMG homepage">← Home</a>
+ </nav>
+</header>
+<main>
+<section class="section section-dark" id="about">
+<div class="container">
+<div class="two-col">
+<div class="hero-photo" style="min-height:360px">
+  <img alt="Coach Jay, founder of CJAMG"
+       loading="lazy"
+       onerror="this.style.display='none';this.parentElement.innerHTML='&lt;div style=&quot;min-height:360px;display:grid;place-items:center;text-align:center;padding:25px&quot;&gt;&lt;div&gt;&lt;strong style=&quot;color:#ffc928;font-size:1.5rem&quot;&gt;DOC JAY PHOTO&lt;/strong&gt;&lt;br&gt;Add as images/doc-jay.jpg&lt;/div&gt;&lt;/div&gt;'"
+       src="images/doc-jay.jpg"/>
+</div><div><div class="kicker">About Us</div><h2>Meet the Person Behind <span class="accent">CJAMG.</span></h2><h3>Coach Jay · Coach Jay’s Active Mentors Guild</h3><p class="lead">CJAMG began in 2022 as a volunteer group—not as a business. It grew from a belief that people and communities can be supported through service, learning, and entrepreneurship.</p><p style="color:#ccc">The group’s development into a formal business followed feedback from clients who believed Coach Jay could reach and help more people through a registered business. Today, CJAMG’s approach brings together customized programs, facilitation, and practical reflection.</p><p style="color:#ccc">CJAMG works with a network of facilitators that may include students, out-of-school youth, and teachers, creating opportunities to contribute to learning and community development. Confirm the current team structure and wording before publication.</p></div>
+</div>
+<div class="two-col" style="margin-top:55px">
+<div><div class="kicker">Our Story</div><h2>From Volunteer Projects to Purposeful Programs.</h2><p style="color:#ccc">Two founding projects shaped CJAMG’s beginnings:</p><p><strong class="accent">Project FACE — For A Cause Events</strong><br/><span style="color:#ccc">Organized fundraising events, with proceeds directed to beneficiaries.</span></p><p><strong class="accent">Project HOPE — Help Our People Elevate</strong><br/><span style="color:#ccc">Provided entrepreneurial mindset training for small and medium-sized enterprises in Batangas.</span></p><p style="color:#ccc">These roots continue to inform CJAMG’s stated focus on development, service, and helping people use their capabilities with purpose.</p></div>
+<div>
+<div class="value" style="margin-bottom:13px"><div class="kicker">Our Vision</div><p>To become a global volunteer entrepreneurial group that helps other leaders serve the same purpose.</p></div>
+<div class="value" style="margin-bottom:13px"><div class="kicker">Our Mission</div><p>To create a business that not only earns money but also promotes the proper use of the head, heart, hand, and habits to develop a well-rounded human being.</p></div>
+<div class="kicker">Our Core Values</div><div class="about-values"><div class="value"><strong>Integrity</strong></div><div class="value"><strong>Excellence</strong></div><div class="value"><strong>Respect</strong></div></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+  <a class="brand" href="index.html" aria-label="CJAMG Home">
+    <img src="images/branding/cjamg-logo.png"
+         alt="CJAMG Logo"
+         style="width:55px;height:55px;object-fit:contain;">
+    <span style="color:#fff">CJAMG</span>
+  </a>
+  <p>Beyond the program. Into your team. Purpose-driven experiences for stronger communication, trust, collaboration, and growth.</p>
+</div>   <div><h3>EXPLORE</h3><a href="index.html">Home</a><a href="activity-finder.html">Activity Finder</a><a href="programs.html">Programs</a><a href="experience.html">Experience</a><a href="about.html">About Us</a><a href="faqs.html">FAQs</a><a href="contact.html">Contact</a></div>
+   <div><h3>CONTACT</h3><a href="mailto:jayson.reyes@g.batstate-u.edu.ph">Email CJAMG</a><a href="tel:+639559257214">Call +63 955 925 7214</a><a href="https://www.facebook.com/jaysonreyes99" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div>
+   <div><h3>CONNECT</h3><p>For consultations, program requests, and order confirmations, contact CJAMG directly through the channels listed here.</p><a href="contact.html">Send an inquiry ↗</a></div>
+  </div>
+  <div class="footer-bottom"><span>© <span id="year"></span> CJAMG. All rights reserved.</span><a href="index.html#home">Back to Home ↑</a><span>Orange · Black · White · Gray · Yellow</span></div>
+ </div>
+</footer>
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
+if(menuBtn && navLinks){
+ menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
+ navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
+}
+const yearEl=document.getElementById('year'); if(yearEl) yearEl.textContent=new Date().getFullYear();
+const inquiryForm=document.getElementById('inquiryForm');
+if(inquiryForm) inquiryForm.addEventListener('submit',function(e){
+ e.preventDefault();
+ if(!this.reportValidity())return;
+ const d=new FormData(this);
+ const subject=encodeURIComponent('CJAMG Program Inquiry — '+d.get('interest'));
+ const body=encodeURIComponent(
+ 'Name: '+d.get('fullName')+'\nEmail: '+d.get('emailAddress')+
+ '\nOrganization: '+(d.get('organization')||'Not provided')+
+ '\nEstimated participants: '+(d.get('participants')||'Not provided')+
+ '\nProgram: '+d.get('interest')+'\nPreferred timeline: '+(d.get('schedule')||'Not provided')+
+ '\n\nGoals and requirements:\n'+d.get('goals'));
+ document.getElementById('formStatus').textContent='Opening your email application with the inquiry details. Please review and send the email to CJAMG.';
+ window.location.href='mailto:jayson.reyes@g.batstate-u.edu.ph?subject='+subject+'&body='+body;
+});
+
+// Activity Finder: client-side recommendations based on visitor selections.
+const finderForm = document.getElementById('activityFinder');
+if (finderForm) {
+  const selections = { activityType: '', teamSize: '', mainGoal: '' };
+  document.querySelectorAll('[data-choice-group]').forEach(group => {
+    const groupName = group.dataset.choiceGroup;
+    group.querySelectorAll('.choice-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const wasSelected = button.getAttribute('aria-pressed') === 'true';
+        group.querySelectorAll('.choice-btn').forEach(option => option.setAttribute('aria-pressed', 'false'));
+        if (!wasSelected) {
+          button.setAttribute('aria-pressed', 'true');
+          selections[groupName] = button.dataset.value;
+        } else {
+          selections[groupName] = '';
+        }
+      });
+    });
+  });
+
+  const results = document.getElementById('finderResults');
+  const summary = document.getElementById('finderSummary');
+  const list = document.getElementById('recommendationList');
+  const locationField = document.getElementById('finderLocation');
+  const budgetField = document.getElementById('finderBudget');
+
+  finderForm.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!selections.activityType || !selections.teamSize || !selections.mainGoal ||
+        !locationField.value || !budgetField.value) {
+      alert('Please choose an activity type, team size, location, budget, and main goal.');
+      return;
+    }
+
+    const goal = selections.mainGoal.toLowerCase();
+    const type = selections.activityType;
+    const size = selections.teamSize;
+    const category = document.getElementById('finderCategory').value;
+    const duration = document.getElementById('finderDuration').value;
+    const date = document.getElementById('finderDate').value;
+    const access = document.getElementById('finderAccess').value.trim();
+    const location = locationField.value;
+    const budget = budgetField.value;
+
+    let ideas = [];
+    if (goal.includes('communication')) {
+      ideas = [
+        ['Communication & Collaboration Lab', 'Guided partner and group challenges followed by reflection on listening, clarity, and feedback.'],
+        ['Team Challenge + Debrief', 'A collaborative activity followed by a structured discussion about communication habits at work.'],
+        ['Business Communication Seminar', 'A workshop-style option for teams that want practical communication techniques.']
+      ];
+    } else if (goal.includes('trust') || goal.includes('teamwork')) {
+      ideas = [
+        ['Trust-Building Team Challenges', 'Cooperative tasks that encourage coordination, shared responsibility, and mutual support.'],
+        ['Problem-Solving Team Quest', 'Small groups work through a challenge, then connect their approach to workplace collaboration.'],
+        ['Team Reflection & Action Planning', 'A facilitated debrief that helps turn observations into achievable team commitments.']
+      ];
+    } else if (goal.includes('leadership')) {
+      ideas = [
+        ['Leadership-in-Action Workshop', 'Interactive scenarios that explore decision-making, accountability, and leading through change.'],
+        ['Strategic Team Challenge', 'A group problem-solving experience focused on shared direction and practical leadership lessons.'],
+        ['Leadership & Communication Seminar', 'A learning-focused option tailored to the team’s current development priorities.']
+      ];
+    } else if (goal.includes('holiday') || goal.includes('fun')) {
+      ideas = [
+        ['Custom Celebration & Team Games', 'A lively, inclusive set of group activities designed around the event and participants.'],
+        ['Outdoor Team Quest', 'A collaborative challenge format for groups who want energy, movement, and shared memories.'],
+        ['Creative Team Workshop', 'A lower-pressure activity that encourages participation, creativity, and connection.']
+      ];
+    } else {
+      ideas = [
+        ['Customized Team-Building Blueprint', 'A balanced program combining purposeful activities, group reflection, and workplace application.'],
+        ['Creative Collaboration Workshop', 'A structured creative challenge that invites new ideas and different ways of working together.'],
+        ['Team Goal-Setting & Debrief', 'A facilitated session that links the experience to clear priorities and next steps.']
+      ];
+    }
+
+    if (category) {
+      const cat = category.toLowerCase();
+      const match = ideas.filter(item => (item[0] + ' ' + item[1]).toLowerCase().includes(cat.split(' ')[0]));
+      if (match.length) ideas = [...match, ...ideas.filter(item => !match.includes(item))];
+    }
+
+    summary.textContent = `For a ${size}-person team, ${type.toLowerCase()} delivery in ${location}, with a per-person budget of ${budget.toLowerCase()}. Goal: ${selections.mainGoal}.`;
+    list.innerHTML = '';
+    ideas.slice(0, 3).forEach((idea, index) => {
+      const card = document.createElement('div');
+      card.className = 'recommendation';
+      const title = document.createElement('strong');
+      title.textContent = `${index + 1}. ${idea[0]}`;
+      const description = document.createElement('p');
+      description.textContent = idea[1];
+      card.append(title, description);
+      list.appendChild(card);
+    });
+
+    const extra = [];
+    if (duration) extra.push(`Duration: ${duration}`);
+    if (date) extra.push(`Preferred date: ${date}`);
+    if (access) extra.push(`Accessibility needs: ${access}`);
+    if (extra.length) {
+      const note = document.createElement('p');
+      note.className = 'finder-note';
+      note.textContent = extra.join(' · ');
+      list.appendChild(note);
+    }
+
+    results.classList.add('visible');
+    results.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    const message = [
+      'Hello CJAMG, I would like to request a customized team-building program.',
+      `Activity type: ${type}`,
+      `Team size: ${size}`,
+      `Location: ${location}`,
+      `Budget per person: ${budget}`,
+      `Main goal: ${selections.mainGoal}`,
+      `Preferred duration: ${duration || 'No preference'}`,
+      `Preferred date: ${date || 'Not specified'}`,
+      `Activity category: ${category || 'No preference'}`,
+      `Accessibility requirements: ${access || 'Not specified'}`,
+      '',
+      'Please help us confirm a suitable program, quotation, and availability.'
+    ].join('\n');
+    document.getElementById('finderContact').href = 'mailto:jayson.reyes@g.batstate-u.edu.ph?subject=' +
+      encodeURIComponent('CJAMG Custom Program Request') + '&body=' + encodeURIComponent(message);
+  });
+
+  document.getElementById('finderReset').addEventListener('click', () => {
+    Object.keys(selections).forEach(key => selections[key] = '');
+    document.querySelectorAll('[data-choice-group] .choice-btn').forEach(button => button.setAttribute('aria-pressed', 'false'));
+    finderForm.reset();
+    results.classList.remove('visible');
+    summary.textContent = '';
+    list.innerHTML = '';
+  });
+}
+
+</script>
+</body>
+</html>
